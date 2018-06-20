@@ -1,7 +1,7 @@
 function Node(element){
     this.element=element;
     this.next=null;
-    this.prev=null;
+    
 };
 function LinkedList(){
     this.head=new Node('head');
