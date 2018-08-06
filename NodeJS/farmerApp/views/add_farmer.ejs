@@ -1,0 +1,96 @@
+<%- include layouts/header.ejs %>            
+    <form method="post" action="/addfarmer" onsubmit="submit()">
+        <div>
+            <label for="name">FullName:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="dno">D_No:</label>
+            <input type="text" id="dno" name="dno" required/>
+        </div>
+        <div>
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street" required/>
+            </div>
+        <div>
+            <label for="village">Village:</label>
+            <input type="text" id="village" name="village" required/>
+        </div>
+            <div>
+                <label for="mandal">Mandal:</label>
+                <input type="text" id="mandal" name="mandal" required/>
+            </div>
+            <div>
+                    <label for="district">District:</label>
+                    <select name="district" id="district">
+                        <option value="select">--Select--</option>
+                        <option value="West Godavari">West Godavari</option>
+                        <option value="East Godavri">East Godavari</option>
+                        <option value="Vijayanagaram">Vijanagaram</option>
+                        <option value="Anathapuram">Ananthapuram</option>
+                        <option value="Srikakulam">Srikakulam</option>
+                        <option value="Chittor">chittor</option>
+                        <option value="Krishna">Krishna</option>
+                        <option value="Kadapa">Kadapa</option>
+                        <option value="Kurnool">Kurnool</option>
+                        <option value="Warangal">Warangal</option>
+                        <option value="Nalgonda">Nalgonda</option>
+                        <option value="Medchal">Medchal</option>
+                        <option value="Ongole"></option>
+                    </select>
+                </div>
+                <div>
+                        <label for="state">State:</label>
+                        <select name="state" id="state">
+                                <option value="select">--Select--</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Telengana">Telengana</option>
+                        </select>
+                    </div>       
+
+        <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required/>
+            </div>
+        <div>
+            <label for="phone">Phno:</label>
+            <input type="number" id="phone" name="phone" required/>
+        </div>
+        <div>
+                <label for="cropland">CropLand:</label>
+                <input type="Number" id="crop" name="cropland" required>
+            </div>
+        
+        <div>
+            <label for="crop">CropName:</label>
+            <input type="text" id="crop" name="crop" required>
+        </div>
+        <div>
+            <label for="startcrop">Crop Start:</label>
+            <input type="date" id="startcrop" name="startcrop" required>
+        </div>
+        <div>
+            <label for="endcrop">Crop End:</label>
+            <input type="date" id="endcrop" name="endcrop" required>
+        </div>
+        <div>
+            <label for="invstamount">Amt_Invs:</label>
+            <input type="number" id="invstamount" name="invstamount" required>
+        </div>
+        <div>
+            <label for="fnlamount">Fnl_sold:</label>
+            <input type="number" id="fnlamount" name="fnlamount" required>
+        </div>
+        <div>
+            <label for="ifyesno">If you had taken any crop loan:</label>
+         <input type="radio" name="yesno" value="yes">Yes
+         <input type="radio" name="yesno"  value="no">No
+                
+            </div>
+        <div class="button">
+            <button type="submit">Send Your Data</button>
+        
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+<%- include layouts/footer.ejs %>

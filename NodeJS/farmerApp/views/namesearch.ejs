@@ -1,0 +1,9 @@
+<%- include layouts/header.ejs %>
+
+<form action="/routes/farmers/namesearch" method="post">
+         <center>
+        <input type="search" name="searchname" id="searchname">
+        <button type="submit" name="searchname" onclick="getname(searchname)">Get Deatils</button>
+    </center>
+</form>
+<%- include layouts/footer.ejs %>

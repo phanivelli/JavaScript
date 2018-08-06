@@ -1,0 +1,57 @@
+<%- include layouts/header.ejs %>
+<div class="page-data"> 
+         <div class="data-table">
+            <table border="1" cellpadding="4" cellspacing="4">
+                <tr>
+                    <th width="50px">No</th>
+                    <th>FullName</th>
+                    <th>D_No</th>
+                    <th>Street</th>
+                    <th>Village</th>
+                    <th>Mandal</th>
+                    <th>District</th>
+                    <th>State</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>CropLand</th>
+                    <th>Crop Name</th>
+                    <th>Crop_Started</th>
+                    <th>Crop_Ended</th>
+                    <th>Amt_Invs</th>
+                    <th>Fnl_sold</th>
+                    <th>If crop loan yes/no</th>
+                </tr>
+                <% if(data.length){ 
+                                
+                    for(var i = 0;i < data.length;i++) { %>
+                    
+                   <tr>
+                       <td><%=(i+1)%></td>
+                       <td><%=data[i].name%></td>
+                       <td><%=data[i].dno%></td>
+                       <td><%=data[i].street%></td>
+                       <td><%=data[i].village%></td>
+                       <td><%=data[i].mandal%></td>
+                       <td><%=data[i].district%></td>
+                       <td><%=data[i].state%></td>
+                       <td><%=data[i].email%></td>
+                       <td><%=data[i].phone%></td>
+                       <td><%=data[i].cropland%></td>
+                       <td><%=data[i].crop%></td>
+                       <td><%=data[i].startcrop%></td>
+                       <td><%=data[i].endcrop%></td>
+                       <td><%=data[i].invstamount%></td>
+                       <td><%=data[i].fnlamount%></td>
+                       <td><%=data[i].yesno%></td>
+                   </tr>
+               <% }
+               
+                }else{ %>
+                    <tr>
+                       <td colspan="3">No user</td>
+                    </tr>
+               <% } %> 
+            </table>
+         </div>
+        </div>
+<%- include layouts/footer.ejs %>

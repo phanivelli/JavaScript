@@ -1,0 +1,157 @@
+body {
+    margin:0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background:#eee;
+    width:100%;
+    height:100%;
+}.topnav{
+      overflow: hidden;
+      background-color: darkgrey;
+  }
+  .topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover{
+  background-color: khaki;
+  color: black;
+}
+
+
+  .sidenav{
+    height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: auto;
+  top: 10;
+  left: 0%;
+  background-color: darkgrey;
+  overflow-x: hidden;
+  padding-top: 20px;
+  }
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #f2f2f2;
+    display: block;
+}
+
+.sidenav a:hover {
+  background-color: khaki;
+  color: black;
+}
+
+.main {
+    margin-left: 160px; 
+    font-size: 10px; 
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 500px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 10px;
+    }
+    .topnav {
+      padding-top: 15px;
+    }
+    .topnav a {
+      font-size: 10px;
+    }
+    
+}
+
+form {
+    
+    margin: 0 auto;
+    width: 600px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+  }
+  
+  input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  .button {
+    padding-left: 90px; 
+  }
+  
+  button {
+    margin-left: .5em;
+  }
+  .page-container{
+      padding:20px;
+    }
+.page-data{
+    padding-left:140pt;
+    padding-right: 30px;
+    
+    table-layout: auto;
+  }
+.page-header{
+    
+    padding:4px;
+    padding-left:40px;
+    width: 70px;
+    background:#00304C;color:#FEFFFD;
+}
+.data-table{
+  padding-left:30px;
+}
+.data-table table{
+  table-layout: auto;
+  border-collapse:collapse;
+  border:2px solid #ddd;
+  widows: 5px;
+  font-size: 11px;
+}
+.a-inside{
+  padding:4px 10px;
+  border:1px solid #fff;
+  text-decoration:none;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
